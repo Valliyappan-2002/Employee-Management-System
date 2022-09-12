@@ -1,2 +1,2 @@
 # Employee-Management-System
-This is an django powered web site code
+Code for django powered web site to manage employees in organisation.
