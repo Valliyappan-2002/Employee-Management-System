@@ -1,0 +1,20 @@
+
+
+<html>
+
+<head>
+  <title> {{ eventName }} </title>
+</head>
+
+<body align = center>
+
+    <form action = '/vasanmeena/{{ dest }}' method = post  >
+        {% csrf_token %}
+        <table align = center>
+           {{ frm }}
+        </table>
+        <input type = submit value = {{ eventName }}>
+    </form>
+
+</body>
+</html>

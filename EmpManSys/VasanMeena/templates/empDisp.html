@@ -1,0 +1,12 @@
+
+
+{% extends 'empDisp1.html' %}
+
+{% block createOpt %}
+  <button> <a href = '/vasanmeena/createEntry/{{ dest }}'> Make EmpEntry </a> </button>
+{% endblock %}
+
+{% block modOpt %}
+    <td><a href ='/vasanmeena/update/{{ emp.id }}/{{ dest }}'>Update</a>/<a href= "/vasanmeena/delete/{{ emp.id }}/{{ dest }}">Delete</a></td>
+{% endblock %}
+

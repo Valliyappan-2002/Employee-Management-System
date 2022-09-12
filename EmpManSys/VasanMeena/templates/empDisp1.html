@@ -1,0 +1,33 @@
+{% extends 'base.htm' %}
+{% block empDisp %}
+	<h3> Employees in {{ name }} </h3>
+	
+	<table align = "center" border = "2" bordercolor = "black">
+	<tr>
+	  <th>S.NO</th>
+	  <th>EmpId</th>
+	  <th>Name</th>
+	  <th>Age</th>
+	  <th>Designation</th>
+	  <th>Salary</th>
+	  <th>Modify/Delete</th>
+	</tr>
+	
+	{% for emp in empLst %}
+	   <tr>
+	     <td>{{ forloop.counter }}</td>
+		 <td>{{ emp.id }}</td>
+		 <td>{{ emp.name }}</td>
+		 <td>{{ emp.age }}</td>
+		 <td>{{ emp.design }}</td>
+		 <td>{{ emp.sal }}</td>
+		 {% block modOpt %}
+		  <td> NA </td> 
+		 {% endblock %}
+	   </tr>
+	{% endfor %}
+	</table>
+	<br>
+	
+	{% block createOpt %}{% endblock %}
+{% endblock %}
