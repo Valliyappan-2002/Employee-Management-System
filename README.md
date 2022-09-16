@@ -1,2 +1,4 @@
 # Employee-Management-System
-Code for django powered web site to manage employees in organisation.
+It is a simple django powered web application to manage employees in organization
+
+
